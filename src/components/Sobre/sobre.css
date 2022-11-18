@@ -1,0 +1,40 @@
+#sobrenos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pai{
+    display: flex;
+    align-items: center;
+
+}
+
+.left-content{
+    display: inline;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.text-sobre{
+    width: 650px;
+    color: #F5F5F5;
+}
+
+.title{
+    color: #D0C39F;
+    display: inline-block;
+}
+
+.clover{
+    display: inline-block;
+    justify-self: center;
+    
+}
+
+
+.fachada{
+   
+    width: 50%;
+   
+}
