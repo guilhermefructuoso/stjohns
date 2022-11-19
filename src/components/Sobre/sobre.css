@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 800px;
 }
 
 .pai{
@@ -12,13 +13,15 @@
 
 .left-content{
     display: inline;
-    width: 100%;
+    width: 90%;
     margin-left: 10%;
 }
 
 .text-sobre{
     width: 650px;
+    max-width: 90%;
     color: #F5F5F5;
+    font-size: 1rem;
 }
 
 .title{
@@ -34,7 +37,38 @@
 
 
 .fachada{
-   
-    width: 50%;
-   
+    width: 90%;
+}
+
+img{
+    width: 100%;
+}
+
+
+@media (max-width: 1200px){
+    #sobrenos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+ 
+}
+
+@media (max-width: 700px){
+    .text-sobre{
+        width: 350px;
+        max-width: 90%;
+        font-size: 0.7rem;
+    }
+    .fachada{
+        max-width: 90%;
+        
+    }
+    .title{
+        width: 200px;
+    }
+    .pai{
+        width:200px;
+    }
+  
 }

@@ -3,6 +3,8 @@ import { BrowserRouter } from 'react-router-dom';
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Sobre from './components/Sobre'
+import Cardapio from './components/Cardapio'
+import Agenda from './components/Agenda'
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
    <Nav/>
    <Home/>
    <Sobre/>
+   <Cardapio/>
+   <Agenda/>
    </BrowserRouter>
   );
 }

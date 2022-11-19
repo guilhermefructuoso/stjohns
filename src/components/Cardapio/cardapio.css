@@ -1,0 +1,59 @@
+
+.title{
+    color: #D0C39F;
+    display: inline-block;
+    
+}
+
+.clover{
+    display: inline-block;
+    justify-self: center;
+   
+}
+
+.label{
+    color: #D0C39F;
+    width: 90%;
+}
+.container-cardapio{
+    display: flex;
+    align-items: center;
+    width: 465px;
+    justify-content: center;
+}
+
+.foto{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.link-cardapio{
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.link-cardapio a{
+    color:#D0C39F;
+}
+
+@media (max-width: 700px){
+    .foto{
+        width: 100%;
+    }
+    .container-cardapio{
+        width: 90%;
+    }
+    .link-cardapio{
+        font-size: 1.1rem;
+        padding: 30px;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    label{
+        font-size: 0.8rem;
+    }
+}
