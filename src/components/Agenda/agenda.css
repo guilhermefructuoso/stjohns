@@ -1,3 +1,13 @@
+
+.container-agenda{
+    margin-left: 8.5%;
+    display: flex;
+    align-items: center;
+}
+.container-agenda p{
+    width: 400px;
+    padding-bottom: 20px;
+}
 .card div{
     display: flex;
     flex-direction: column;
@@ -5,8 +15,8 @@
     margin-left: 20%;
     border: 1px solid #D0C39F;
     border-radius: 7px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 150px;
     position: relative;
     margin-top: 55px;
 }
@@ -19,17 +29,20 @@
     margin: -55px auto;
     position: absolute;
 }
-
-
-
-h3{
-    color: #D0C39F;
-    margin-top: 55px;
+.clover img{
+   display: flex;
+   align-items: center;
+  
 }
 
 p{
-    color: #D0C39F; 
-    
+    color: #D0C39F;
+}
+
+.p-agenda{
+    width: 400px;
+    height: 120px;
+    margin-left: 7.9%;
 }
 
 
@@ -43,5 +56,13 @@ p{
         margin-right: auto;
         padding-left: 5px;
         padding-right: 5px;
+    }
+     p{
+        font-size: 0.8rem;
+    }
+
+    .p-agenda{
+        width: 300px;
+        height: 100px;
     }
 }
