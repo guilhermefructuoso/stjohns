@@ -53,6 +53,7 @@ function Agenda() {
       </div>
      
       <div>
+        <div className="central">
         <Carousel responsive={responsive} autoPlaySpeed={30000}>
           <div className="card">
             <div className="music">
@@ -73,7 +74,7 @@ function Agenda() {
           <div className="card">
             <div className="music">
               <img src={anne} alt="consultorio" />
-              <h3>Vitão</h3>
+              <h3>Anne</h3>
               <p>3/DEZ</p>
               <p>Sábado</p>
             </div>
@@ -103,6 +104,7 @@ function Agenda() {
             </div>
           </div>
         </Carousel>
+        </div>
       </div>
     </section>
   );

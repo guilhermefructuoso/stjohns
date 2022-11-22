@@ -8,7 +8,7 @@
 .clover{
     display: inline-block;
     justify-self: center;
-   
+    padding-right: 10px;
 }
 
 .label{

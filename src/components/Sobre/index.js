@@ -1,11 +1,15 @@
 import React from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import trevo from "../../assets/trevo.svg";
 import fachada from "../../assets/fachada.png"
+import fachada1 from "../../assets/fachada1.png"
 import './sobre.css'
 
 function Sobre() {
+  const isTablet = useMediaQuery("(max-width: 700px)");
   return (
     <section id="sobrenos">
+     
       <div className="left-content">
         <div className="pai">
         <div className="clover">
@@ -44,10 +48,15 @@ function Sobre() {
             </p>
         </div>
       </div>
-   
+      {isTablet ? (
         <div className="fachada">
-        <img src={fachada} alt="fachada" />
+        <img src={fachada1} alt="fachada" />
         </div>
+        ) : (
+          <div className="fachada">
+          <img src={fachada} alt="fachada" />
+          </div>
+           )}
     </section>
   );
 }

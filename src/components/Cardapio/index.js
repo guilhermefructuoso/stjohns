@@ -34,7 +34,6 @@ function Cardapio() {
   };
   return (
     <section id="cardapio">
-      <div>
         <div className="container-cardapio">
           <div className="clover">
             <img src={trevo} alt="trevo" />
@@ -43,6 +42,8 @@ function Cardapio() {
             <h1>Cardápio</h1>
           </div>
         </div>
+        <div>
+        <div className="central">
         <Carousel responsive={responsive} autoPlaySpeed={30000}>
           <div className="foto">
             <img src={foto} alt="consultorio" />
@@ -113,6 +114,7 @@ function Cardapio() {
             </div>
           </div>
         </Carousel>
+        </div>
         <div className="link-cardapio">
         <a href="https://instagram.com/stjohnsenseada?igshid=YmMyMTA2M2Y=" target="_blanck">
           Veja o cardápio completo.

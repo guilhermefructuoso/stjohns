@@ -8,13 +8,12 @@
 .pai{
     display: flex;
     align-items: center;
-
 }
 
 .left-content{
     display: inline;
     width: 90%;
-    margin-left: 10%;
+    margin-left: 8.5%;
 }
 
 .text-sobre{
@@ -37,7 +36,8 @@
 
 
 .fachada{
-    width: 90%;
+    width: 100%;
+    margin-top: 120px;
 }
 
 img{
@@ -57,13 +57,18 @@ img{
 @media (max-width: 700px){
     .text-sobre{
         width: 350px;
-        max-width: 90%;
+        max-width: 85%;
         font-size: 0.7rem;
     }
-    .fachada{
-        max-width: 90%;
-        
+
+    .left-content{
+        margin: 0;
     }
+
+    .fachada{
+        margin-top: 0;
+    }
+   
     .title{
         width: 200px;
     }

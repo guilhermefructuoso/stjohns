@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Sobre from './components/Sobre'
 import Cardapio from './components/Cardapio'
 import Agenda from './components/Agenda'
+import Ambientes from './components/Ambientes'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
    <Sobre/>
    <Cardapio/>
    <Agenda/>
+   <Ambientes/>
    </BrowserRouter>
   );
 }
