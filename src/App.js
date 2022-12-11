@@ -6,6 +6,8 @@ import Sobre from './components/Sobre'
 import Cardapio from './components/Cardapio'
 import Agenda from './components/Agenda'
 import Ambientes from './components/Ambientes'
+import Contato from './components/Contato'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
    <Cardapio/>
    <Agenda/>
    <Ambientes/>
+   <Contato/>
+   <Footer/>
    </BrowserRouter>
   );
 }

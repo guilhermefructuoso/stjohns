@@ -31,7 +31,6 @@
 .clover{
     display: inline-block;
     justify-self: center;
-    
 }
 
 
@@ -59,6 +58,10 @@ img{
         width: 350px;
         max-width: 85%;
         font-size: 0.7rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .left-content{

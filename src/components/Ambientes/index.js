@@ -11,7 +11,6 @@ import img6 from "../../assets/img6.png";
 export default function Ambientes() {
   return (
     <section id="ambientes">
-        
       <div className="container-agenda">
         <div className="clover">
           <img src={trevo} alt="trevo" />
@@ -21,14 +20,14 @@ export default function Ambientes() {
         </div>
       </div>
       <div className="central">
-      <div className="cards-thumbs">
-        <img src={img1} alt="ambiente" />
-        <img src={img2} alt="ambiente" />
-        <img src={img3} alt="ambiente" />
-        <img src={img4} alt="ambiente" />
-        <img src={img5} alt="ambiente" />
-        <img src={img6} alt="ambiente" />
-      </div>
+        <div className="cards-thumbs">
+          <img src={img1} alt="ambiente" />
+          <img src={img2} alt="ambiente" />
+          <img src={img3} alt="ambiente" />
+          <img src={img4} alt="ambiente" />
+          <img src={img5} alt="ambiente" />
+          <img src={img6} alt="ambiente" />
+        </div>
       </div>
     </section>
   );

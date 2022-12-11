@@ -1,8 +1,4 @@
-#sobrenos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .container-agenda{
     margin-left: 8.5%;
 }
@@ -35,10 +31,9 @@
     color: #D0C39F;
     margin-top: 50px;
 }
-.clover img{
-   display: flex;
-   align-items: center;
-  
+.clover{
+    display: inline-block;
+    justify-self: center;
 }
 
 p{

@@ -35,7 +35,7 @@ function Agenda() {
     },
   };
   return (
-    <section id="angenda">
+    <section id="agenda">
       <div className="container-agenda">
         <div className="clover">
           <img src={trevo} alt="trevo" />

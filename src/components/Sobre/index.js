@@ -1,23 +1,22 @@
 import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import trevo from "../../assets/trevo.svg";
-import fachada from "../../assets/fachada.png"
-import fachada1 from "../../assets/fachada1.png"
-import './sobre.css'
+import fachada from "../../assets/fachada.png";
+import fachada1 from "../../assets/fachada1.png";
+import "./sobre.css";
 
 function Sobre() {
   const isTablet = useMediaQuery("(max-width: 700px)");
   return (
     <section id="sobrenos">
-     
       <div className="left-content">
         <div className="pai">
-        <div className="clover">
-          <img src={trevo} alt="trevo" />
-        </div>
-        <div className="title">
-          <h1>Sobre nós</h1>
-        </div>
+          <div className="clover">
+            <img src={trevo} alt="trevo" />
+          </div>
+          <div className="title">
+            <h1>Sobre nós</h1>
+          </div>
         </div>
         <div className="text-sobre">
           <p>
@@ -31,9 +30,9 @@ function Sobre() {
             delectus. Qui necessitatibus enim et libero molestiae eum voluptate
             nemo. Est labore iusto qui optio cumque ut inventore veniam est
             fugit dolores et laudantium pariatur eos explicabo molestias quo
-            corrupti consequatur. <br/> <br/>
-            </p>
-            <p>
+            corrupti consequatur. <br /> <br />
+          </p>
+          <p>
             Lorem ipsum dolor sit amet. Cum veniam voluptatum et molestiae
             voluptatem ut mollitia repellendus ut esse magni et corporis
             dolorem. Ut rerum esse ea dignissimos veritatis ut nisi consequuntur
@@ -45,18 +44,18 @@ function Sobre() {
             nemo. Est labore iusto qui optio cumque ut inventore veniam est
             fugit dolores et laudantium pariatur eos explicabo molestias quo
             corrupti consequatur.
-            </p>
+          </p>
         </div>
       </div>
       {isTablet ? (
         <div className="fachada">
-        <img src={fachada1} alt="fachada" />
+          <img src={fachada1} alt="fachada" />
         </div>
-        ) : (
-          <div className="fachada">
+      ) : (
+        <div className="fachada">
           <img src={fachada} alt="fachada" />
-          </div>
-           )}
+        </div>
+      )}
     </section>
   );
 }

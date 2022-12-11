@@ -1,8 +1,9 @@
-
+#cardapio{
+    margin-top: 50px;
+}
 .title{
     color: #D0C39F;
     display: inline-block;
-    
 }
 
 .clover{
@@ -20,6 +21,7 @@
     align-items: center;
     width: 465px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .foto{
