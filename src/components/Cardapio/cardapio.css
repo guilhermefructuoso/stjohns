@@ -4,7 +4,9 @@
 .title{
     color: #D0C39F;
     display: inline-block;
+   
 }
+
 
 .clover{
     display: inline-block;
@@ -15,6 +17,8 @@
 .label{
     color: #D0C39F;
     width: 90%;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .container-cardapio{
     display: flex;

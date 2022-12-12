@@ -5,6 +5,6 @@ video{
 .whats {
     position: fixed;
     z-index: 100;
-    bottom: 75px;
+    bottom: 40px;
     right: 40px;
 }
