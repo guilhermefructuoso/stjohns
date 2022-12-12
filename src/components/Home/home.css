@@ -1,3 +1,10 @@
 video{
     width: 100%;
 }
+
+.whats {
+    position: fixed;
+    z-index: 100;
+    bottom: 75px;
+    right: 40px;
+}

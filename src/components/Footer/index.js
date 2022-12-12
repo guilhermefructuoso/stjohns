@@ -5,7 +5,7 @@ import { BsFacebook } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsSpotify } from "react-icons/bs";
 import { BsTelephoneFill } from "react-icons/bs";
-import { TfiEmail } from "react-icons/tfi"
+import { TfiEmail } from "react-icons/tfi";
 import logo from "../../assets/footer_logo.png";
 
 function Footer() {
@@ -27,16 +27,33 @@ function Footer() {
           </div>
           <div className="footer-links">
             <div className="footer_link">
-            <BsInstagram color="#ccc" size={25} />
+              <a
+                href="https://instagram.com/stjohnsenseada?igshid=YmMyMTA2M2Y="
+                target="_blanck"
+              >
+                <BsInstagram color="#ccc" size={25} />
+              </a>
             </div>
             <div className="footer_link">
-            <BsFacebook color="#ccc" size={25} />
+              <a
+                href="https://pt-br.facebook.com/stjohnsenseada/"
+                target="_blanck"
+              >
+                <BsFacebook color="#ccc" size={25} />
+              </a>
             </div>
             <div className="footer_link">
-            <BsWhatsapp color="#ccc" size={25} />
+              <a
+                href="https://api.whatsapp.com/send?phone=5511982027297"
+                target="_blanck"
+              >
+                <BsWhatsapp color="#ccc" size={25} />
+              </a>
             </div>
             <div className="footer_link">
-            <BsSpotify color="#ccc" size={25} />
+              <a href="https://www.spotify.com/" target="_blanck">
+                <BsSpotify color="#ccc" size={25} />
+              </a>
             </div>
           </div>
         </div>
@@ -50,13 +67,13 @@ function Footer() {
             </div>
           </div>
           <div className="email">
-          <div className="email-icon">
-            <TfiEmail color="#ccc" size={25}/>
-          </div>
-          <div className="email-adress">
+            <div className="email-icon">
+              <TfiEmail color="#ccc" size={25} />
+            </div>
+            <div className="email-adress">
               <p>contato@stjohnsbeerstore.com.br</p>
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </section>
