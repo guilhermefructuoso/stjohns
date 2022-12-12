@@ -1,12 +1,63 @@
 import React from "react";
 import "./footer.css";
-import footer from "../../assets/footer-img.png";
+import { BsInstagram } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
+import { BsSpotify } from "react-icons/bs";
+import { BsTelephoneFill } from "react-icons/bs";
+import { TfiEmail } from "react-icons/tfi"
+import logo from "../../assets/footer_logo.png";
 
 function Footer() {
   return (
     <section id="footer">
-      <div>
-        <img src={footer} alt="dublin" />
+      <div className="footer-container">
+        <div className="footer-logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="time">
+          <h4>Horário de funcionamento</h4>
+          <p>Quarta e quinta das 16h às 00h</p>
+          <p>Sexta e Sábado das 16h às 2h</p>
+          <p>Domingo das 16h às 00h</p>
+        </div>
+        <div className="social">
+          <div className="social-title">
+            <h4>Redes Sociais</h4>
+          </div>
+          <div className="footer-links">
+            <div className="footer_link">
+            <BsInstagram color="#ccc" size={25} />
+            </div>
+            <div className="footer_link">
+            <BsFacebook color="#ccc" size={25} />
+            </div>
+            <div className="footer_link">
+            <BsWhatsapp color="#ccc" size={25} />
+            </div>
+            <div className="footer_link">
+            <BsSpotify color="#ccc" size={25} />
+            </div>
+          </div>
+        </div>
+        <div className="footer-contact">
+          <div className="phone">
+            <div className="phone-icon">
+              <BsTelephoneFill color="#ccc" size={25} />
+            </div>
+            <div className="phone-number">
+              <p>(13) 3324-1157</p>
+            </div>
+          </div>
+          <div className="email">
+          <div className="email-icon">
+            <TfiEmail color="#ccc" size={25}/>
+          </div>
+          <div className="email-adress">
+              <p>contato@stjohnsbeerstore.com.br</p>
+            </div>
+            </div>
+        </div>
       </div>
     </section>
   );

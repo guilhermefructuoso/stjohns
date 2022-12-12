@@ -183,6 +183,10 @@ label {
     }
 
     .form-container{
+        width: 100%;
+    }
+
+    .form{
         width: 90%;
     }
 
@@ -191,7 +195,7 @@ label {
     }
 
     button[type='submit']{
-        width: 90%;
+        width: 88%;
     }
 
 }
