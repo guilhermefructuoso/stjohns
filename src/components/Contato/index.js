@@ -1,56 +1,53 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { useForm } from "react-hook-form";
-import firebase from "../../firebaseConnection";
+import { db } from '../../firebaseConnection'
+import { addDoc, collection } from 'firebase/firestore'
 import "./contato.css";
 import trevo from '../../assets/trevo.svg';
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 function Contato() {
-  const {
-    register,
-    reset,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({});
-  const onSubmit = async (data) => {
-    await firebase
-      .firestore()
-      .collection("contact")
-      .add({
-        name:  data.name,
-        email: data.email,
-        phone: data.phone,
-        destination: data.destination,
-        message: data.message,
-      })
-      .then(() => {
-        toast.success('Mensagem enviada com sucesso!')
-      })
-      .catch((error) => {
-        alert("ERRO" + error);
-      });
+    const {
+        register,
+        reset,
+        handleSubmit,
+        formState: { errors }
+    } = useForm({})
+    const onSubmit = async (data) => {
+        await addDoc(collection(db, "contact"),{
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            message: data.message
+        })
+        .then(()=>{
+            toast.success('Mensagem enviada com sucesso!')
+        })
+        .catch((error)=>{
+            alert('ERRO' + error)
+        })
+       
+        await addDoc(collection(db, "mail"),{
+          to: "portosegurotaxi1@gmail.com",
+          message: {
+            subject: "Olá, gostaria de fazer um orçamento!",
+            html: JSON.stringify(data),
+          },
+        });
+  
+        
+        reset({
+            name: '',
+            email: '',
+            phone: '',
+            destination: '',
+            message: '',
+        })
 
-    await firebase
-      .firestore()
-      .collection("mail")
-      .add({
-        to: "portosegurotaxi1@gmail.com",
-        message: {
-          subject: "Olá, gostaria de fazer um orçamento!",
-          html: JSON.stringify(data),
-        },
-      });
-
-    reset({
-      name: "",
-      email: "",
-      phone: "",
-      destination: "",
-      message: "",
-    });
-  };
+       
+    }
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
