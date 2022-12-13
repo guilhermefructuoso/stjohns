@@ -77,21 +77,23 @@ textarea {
 }
 
 button[type='submit'] {
-    background-color:  #D0C39F;
-
-    color: white;
+    background-color:  #C3A22D;
+    color: #F5F5F5;
     padding: 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 85%;
     font-size: 1.2rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.8px;
     font-family: 'Inter';
+    font-weight: 700;
 }
 
 button[type='submit']:hover {
-    background-color: #00b4c7;
+    background-color: #D0C39F;
+    color: #222222;
+    transition: 0.5s;
 }
 
 label {
@@ -124,6 +126,7 @@ label {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1.1rem;
+    color:#F5F5F5;
 }
 
 @media (max-width: 1200px){
@@ -199,6 +202,10 @@ label {
 
     button[type='submit']{
         width: 88%;
+    }
+
+    .p-contact p{
+        font-size: 0.75rem;
     }
 
 }

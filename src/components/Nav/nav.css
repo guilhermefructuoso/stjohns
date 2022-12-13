@@ -95,7 +95,8 @@ a:hover {
 }
 
 .anchor-modal a:hover {
-    color: rgba(34, 34, 34, 0.5);
+    color: #C3A22D;
+    transition: 0.5s;
 }
 
 @media (max-width: 700px) {

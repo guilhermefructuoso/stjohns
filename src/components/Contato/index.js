@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import firebase from "../../firebaseConnection";
 import "./contato.css";
 import trevo from '../../assets/trevo.svg';
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function Contato() {
   const {
@@ -17,14 +19,14 @@ function Contato() {
       .firestore()
       .collection("contact")
       .add({
-        name: data.name,
+        name:  data.name,
         email: data.email,
         phone: data.phone,
         destination: data.destination,
         message: data.message,
       })
       .then(() => {
-        alert("Mensagem enviada com sucesso!");
+        toast.success('Mensagem enviada com sucesso!')
       })
       .catch((error) => {
         alert("ERRO" + error);

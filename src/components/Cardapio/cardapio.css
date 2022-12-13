@@ -38,11 +38,14 @@
 .link-cardapio{
     text-align: center;
     padding: 50px;
-    font-size: 1.5rem;
 }
 
 .link-cardapio a{
     color:#D0C39F;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 1px solid #D0C39F;
 }
 
 @media (max-width: 700px){

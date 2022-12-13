@@ -117,7 +117,7 @@ function Cardapio() {
         </div>
         <div className="link-cardapio">
         <a href="https://instagram.com/stjohnsenseada?igshid=YmMyMTA2M2Y=" target="_blanck">
-          Veja o cardápio completo.
+          Veja o cardápio completo
         </a>
         </div>
       </div>

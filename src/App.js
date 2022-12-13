@@ -8,6 +8,7 @@ import Agenda from './components/Agenda'
 import Ambientes from './components/Ambientes'
 import Contato from './components/Contato'
 import Footer from './components/Footer'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
    <Ambientes/>
    <Contato/>
    <Footer/>
+   <ToastContainer autoClose={3000} />
    </BrowserRouter>
   );
 }
