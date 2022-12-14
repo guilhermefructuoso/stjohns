@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
@@ -13,7 +14,9 @@ function Footer() {
     <section id="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <img src={logo} alt="logo" />
+          <AnchorLink href="#nav">
+            <img src={logo} alt="logo" />
+          </AnchorLink>
         </div>
         <div className="time">
           <h4>Horário de funcionamento</h4>

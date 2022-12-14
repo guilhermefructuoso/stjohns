@@ -10,7 +10,7 @@ function Sobre() {
   return (
     <section id="sobrenos">
       <div className="left-content">
-        <div className="pai">
+        <div className="content">
           <div className="clover">
             <img src={trevo} alt="trevo" />
           </div>

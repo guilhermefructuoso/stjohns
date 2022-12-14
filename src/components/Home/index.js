@@ -2,7 +2,7 @@ import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import guinness from "../../assets/videoguinness.gif";
 import guinness1 from "../../assets/videoguinness.mp4";
-import whats from "../../assets/whatsapp.png";
+import whats from "../../assets/whatsapp.svg";
 
 import "./home.css";
 
@@ -26,7 +26,7 @@ function Home() {
           href="http://wa.me/5511982027297?text=Olá, gostaria de fazer uma reserva!"
           target="-blank"
         >
-          <img src={whats} alt="botão whatsapp" width={75} height={75} />
+          <img src={whats} alt="botão whatsapp" width={70} height={70} />
         </a>
       </div>
     </section>

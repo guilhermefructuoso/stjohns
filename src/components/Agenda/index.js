@@ -60,7 +60,7 @@ function Agenda() {
               <img src={gullivera} alt="consultorio" />
               <h3>Gullivera</h3>
               <p>01/DEZ</p>
-              <p>Quinta</p>
+              <label>Quinta-feira</label>
             </div>
           </div>
           <div className="card">
@@ -68,15 +68,15 @@ function Agenda() {
               <img src={degasperi} alt="consultorio" />
               <h3>Degasperi</h3>
               <p>02/DEZ</p>
-              <p>Sexta</p>
+              <label>Sexta-feira</label>
             </div>
           </div>
           <div className="card">
             <div className="music">
               <img src={anne} alt="consultorio" />
               <h3>Anne</h3>
-              <p>3/DEZ</p>
-              <p>Sábado</p>
+              <p className="data">3/DEZ</p>
+              <label>Sábado</label>
             </div>
           </div>
           <div className="card">
@@ -84,7 +84,7 @@ function Agenda() {
               <img src={vitao} alt="consultorio" />
               <h3>Satisfactor</h3>
               <p>04/DEZ</p>
-              <p>Domingo</p>
+              <label>Domingo</label>
             </div>
           </div>
           <div className="card">
@@ -92,7 +92,7 @@ function Agenda() {
               <img src={satisfactor} alt="consultorio" />
               <h3>Satisfactor</h3>
               <p>05/DEZ</p>
-              <p>Segunda</p>
+              <label>Segunda-feira</label>
             </div>
           </div>
           <div className="card">
@@ -100,7 +100,7 @@ function Agenda() {
               <img src={gullivera} alt="consultorio" />
               <h3>Gullivera</h3>
               <p>06/DEZ</p>
-              <p>Terça</p>
+              <label>Terça-feira</label>
             </div>
           </div>
         </Carousel>
