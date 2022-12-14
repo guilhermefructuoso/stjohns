@@ -14,6 +14,11 @@
     padding-right: 10px;
 }
 
+.clover img{
+    width: 39px;
+    height: 50px;
+}
+
 .label{
     color: #D0C39F;
     width: 90%;
@@ -53,9 +58,7 @@
     .foto{
         width: 100%;
     }
-    .container-cardapio{
-        width: 90%;
-    }
+   
     .link-cardapio{
         font-size: 1.1rem;
         padding: 30px;
