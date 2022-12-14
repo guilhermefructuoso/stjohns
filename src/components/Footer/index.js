@@ -34,7 +34,7 @@ function Footer() {
                 href="https://instagram.com/stjohnsenseada?igshid=YmMyMTA2M2Y="
                 target="_blanck"
               >
-                <BsInstagram color="#ccc" size={40} />
+                <BsInstagram size={40} />
               </a>
             </div>
             <div className="footer_link">
@@ -42,7 +42,7 @@ function Footer() {
                 href="https://pt-br.facebook.com/stjohnsenseada/"
                 target="_blanck"
               >
-                <BsFacebook color="#ccc" size={40} />
+                <BsFacebook size={40} />
               </a>
             </div>
             <div className="footer_link">
@@ -50,12 +50,12 @@ function Footer() {
                 href="https://api.whatsapp.com/send?phone=5511982027297"
                 target="_blanck"
               >
-                <BsWhatsapp color="#ccc" size={40} />
+                <BsWhatsapp  size={40} />
               </a>
             </div>
             <div className="footer_link">
               <a href="https://www.spotify.com/" target="_blanck">
-                <BsSpotify color="#ccc" size={40} />
+                <BsSpotify  size={40} />
               </a>
             </div>
           </div>

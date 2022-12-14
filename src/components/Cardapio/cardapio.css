@@ -23,9 +23,10 @@
 .container-cardapio{
     display: flex;
     align-items: center;
-    width: 465px;
+    width: 200px;
     justify-content: center;
     margin-bottom: 50px;
+    margin-left: 8.5%;
 }
 
 .foto{

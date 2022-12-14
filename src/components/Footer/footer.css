@@ -45,6 +45,15 @@ h4{
     margin-right: 15px;
 }
 
+.footer_link a{
+    color: #f5f5f5;
+}
+
+.footer_link a:hover{
+    color:#C3A22D;
+    transition: 0.5s;
+}
+
 .social{
     margin-top: 300px;
    
