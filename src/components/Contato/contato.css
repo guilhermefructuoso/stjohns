@@ -184,12 +184,15 @@ label {
         margin-left: -15%;
     }
 
+    
+
     .map{
         height: 300px;
     }
 
     .form-container{
         width: 100%;
+       
     }
 
     .form{
