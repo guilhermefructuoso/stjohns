@@ -1,28 +1,16 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom';
-import Nav from './components/Nav'
-import Home from './components/Home'
-import Sobre from './components/Sobre'
-import Cardapio from './components/Cardapio'
-import Agenda from './components/Agenda'
-import Ambientes from './components/Ambientes'
-import Contato from './components/Contato'
-import Footer from './components/Footer'
+import RoutesApp from './routes/index.js'
 import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-   <BrowserRouter>
-   <Nav/>
-   <Home/>
-   <Sobre/>
-   <Cardapio/>
-   <Agenda/>
-   <Ambientes/>
-   <Contato/>
-   <Footer/>
-   <ToastContainer autoClose={3000} />
-   </BrowserRouter>
+  
+    <div className="App">
+    <ToastContainer autoClose={3000}/>
+    <RoutesApp/>
+  </div>
+   
   );
 }
 

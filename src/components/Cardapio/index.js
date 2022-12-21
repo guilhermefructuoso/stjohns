@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
+import { Link } from 'react-router-dom'
 import "react-multi-carousel/lib/styles.css";
 import "./cardapio.css";
 import trevo from "../../assets/trevo.svg";
@@ -118,7 +119,9 @@ function Cardapio() {
         <div className="link-cardapio">
         <a href="https://instagram.com/stjohnsenseada?igshid=YmMyMTA2M2Y=" target="_blanck">
           Veja o cardápio completo
-        </a>
+        </a><br/>
+
+        <Link to="/promo">Promoção</Link>
         </div>
       </div>
     </section>
